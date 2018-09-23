@@ -9,8 +9,11 @@
 <body>
 <div class=page>
   <h1>Flaskr</h1>
-  {% if airpassenger %}
-    <p>{{airpassenger}}</p>
-    {% endif %}
+  {% for airpassenger in airpassenger %}
+  <li>{{ airpassenger.TravelDate}}</li>
+  <li>{{ airpassenger.Passengers}}</li>
+  {% else %}
+  <li>no data</li>
+   {% endfor %}
 </div>
 </body>

@@ -1,7 +1,2 @@
-# from sqlalchemy.orm import sessionmaker
-
-# Session = sessionmaker()
-# session = Session()
-
-SQLALCHEMY_DATABASE_URL = 'mysql+pymysql://root:human92@localhost/air_passenger?charset=utf8'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:human92@127.0.0.1/air_passenger?charset=utf8'
 SECRET_KEY = 'secret key'
