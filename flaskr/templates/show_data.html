@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
 </head>
 
 <body>
 <div class=page>
   <h1>Flaskr</h1>
-  {% for airpassenger in airpassenger %}
-  <li>{{ airpassenger.TravelDate}}</li>
-  <li>{{ airpassenger.Passengers}}</li>
-  {% else %}
+{% for result in result %}
+  <li>{{ result.TravelDate, result.Passengers }}</li>
+  {#<!-- {% for airpassenger in airpassenger %}
+  <li>{{ airpassenger.TravelDate, airpassenger.Passengers }}</li> -->
+  <!-- <li>{{ airpassenger.Passengers}}</li> -->#}
+{% else %}
   <li>no data</li>
-   {% endfor %}
+{% endfor %}
 </div>
 </body>
