@@ -1,6 +1,7 @@
 myvenv
 __pycache__
 requirements.txt
+__previous
 *.pyc
 *~
 
